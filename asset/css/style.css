@@ -8,3 +8,78 @@
     --shadow: 0 4px 6px rgba(0,0,0,0.1);
     --transition: all 0.3s ease;
 }
+
+*{
+  margin: 0  ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.navbar{
+    background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
+
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo{
+    text-decoration: none;
+    color:white;
+    font-size:1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+margin-right: 10px;
+font-size: 2rem;
+}
+
+
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size:1.1rem;
+    padding: 8px 0;
+    position: relative;
+
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: white;
+    height: 2px;
+    transition: var(--transition);
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+}
