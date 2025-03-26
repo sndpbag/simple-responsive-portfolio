@@ -17,7 +17,7 @@
                 <span class="logo-icon">❖</span> Horizon
             </a>
 
-            <ul class="nav-menu">
+            <ul id="menu" class="nav-menu">
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
                 <li><a href="#" class="nav-link">Service</a></li>
@@ -25,7 +25,7 @@
                 <li><a href="#" class="nav-link">Contact</a></li>
 
             </ul>
-            <button class="hamburger">☰</button>
+            <button id="btn" class="hamburger">☰</button>
 
         </div>
     </nav>
@@ -126,12 +126,14 @@
                 <!-- 2nd column quick links -->
                 <div class="footer-column">
                     <h3>Quick Links</h3>
+                    
                     <ul class="footer-links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
+
                     </ul>
                    
                 </div>
@@ -140,13 +142,13 @@
                 <!-- 3rd column services -->
                 <div class="footer-column">
                     <h3>Services</h3>
-
                     <ul class="footer-links">
                         <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">MObile Apps</a></li>
                         <li><a href="#">E-commerce</a></li>
-                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">Optimization</a></li>
                         <li><a href="#">UI/UX Design</a></li>
+
                     </ul>
                     
                 </div>
@@ -156,39 +158,37 @@
                 <div class="footer-column">
                     <h3>Contact Us</h3>
                     <div class="contact-info">
-
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
-                            <span>D.Gouripur, amtala, south 24 pgs,wb-743503</span>
-                            
+                            <span >D. gouriput, south 24 pgs, pin -743503</span>
                         </div>
 
                         <div class="contact-item">
                             <span class="contact-icon">📞</span>
-                            <span>7980048890</span>
-                            
+                            <span >7980048890</span>
                         </div>
+
 
                         <div class="contact-item">
                             <span class="contact-icon">✉️</span>
-                            <span>sndpbagg@gmail.com</span>
-                            
+                            <span >sndpbagg@gmail.com</span>
                         </div>
-
                     </div>
-                    <h4 >Subscribe to Newsletter</h4>
+
+                    <h4>Subscribe to Newsletter</h4>
                     <form action="" class="newsletter-form">
-                        <input type="email" placeholder="your email" class="newletter-input" >
-                        <button type="submit" class="newsletter-btn">Send </button>
-
-
+                        <input class="newsletter-input" type="text" placeholder="Enter your email">
+                        <button class="newsletter-btn" type="submit">send</button>
                     </form>
+                  
+                   
                 </div>
 
             </div>
 
+         
             <div class="footer-bottom">
-                <p>&copy; 2025 Horizon. All Rights Reserved.</p>
+                <p>© 2025 Horizon. All Rights Reserved.</p>
 
             </div>
 
@@ -199,5 +199,19 @@
      </footer>
 
 
+
+     <script>
+        const menu = document.getElementById("menu");
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+
+     </script>
+    
+
+</body>
 
 </html>
